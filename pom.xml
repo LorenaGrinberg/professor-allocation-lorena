@@ -8,13 +8,13 @@
 		<version>2.6.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
+	<groupId>com.project</groupId>
 	<artifactId>professor-allocation-lorena</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>professor-allocation-lorena</name>
 	<description>Professor Allocation Backend</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
