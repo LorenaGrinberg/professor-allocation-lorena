@@ -8,5 +8,4 @@ import com.project.professorallocation.model.Course;
 @Repository
 public interface CourseRepository extends JpaRepository<Course, Long> {
 
-
 }
