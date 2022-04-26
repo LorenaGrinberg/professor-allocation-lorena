@@ -23,16 +23,16 @@ public class AllocationServiceTests {
 	@Test
 	public void create() throws ParseException { 
 		Allocation allocation = new Allocation();
-		allocation.setDayofweek(DayOfWeek.TUESDAY);
+		allocation.setDayofweek(DayOfWeek.SATURDAY);
 		//allocation.setDayofweek(DayOfWeek.MONDAY);//allocation.setProfessorId(4L);//allocation.setCourseId(2L);
 		//allocation.setDayofweek(DayOfWeek.FRIDAY);//allocation.setProfessorId(5L);//allocation.setCourseId(5L);
 		//allocation.setDayofweek(DayOfWeek.WEDNESDAY);//allocation.setProfessorId(1L);//allocation.setCourseId(1L);
 		//allocation.setDayofweek(DayOfWeek.THURSDAY);//allocation.setProfessorId(3L);//allocation.setCourseId(3L);
 		//allocation.setDayofweek(DayOfWeek.TUESDAY);//allocation.setProfessorId(2L);//allocation.setCourseId(4L);
-		allocation.setProfessorId(2L);
-		allocation.setCourseId(4L);
-		allocation.setStartHour(sdf.parse("19:20-0300"));
-		allocation.setEndHour(sdf.parse("21:20-0300"));
+		allocation.setProfessorId(6L);
+		allocation.setCourseId(6L);
+		allocation.setStartHour(sdf.parse("19:25-0300"));
+		allocation.setEndHour(sdf.parse("21:25-0300"));
 		
 		allocation = service.create(allocation); 
 	}
@@ -41,7 +41,11 @@ public class AllocationServiceTests {
 	public void update() throws ParseException {
 		Allocation allocation = new Allocation();
 		allocation.setId(9L);
-		allocation.setDayofweek(DayOfWeek.SATURDAY);
+		allocation.setDayofweek(DayOfWeek.SUNDAY);
+		allocation.setProfessorId(6L);
+		allocation.setCourseId(6L);
+		allocation.setStartHour(sdf.parse("19:23-0300"));
+		allocation.setEndHour(sdf.parse("21:23-0300"));
 		
 		allocation = service.update(allocation);
 		
