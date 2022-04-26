@@ -22,11 +22,12 @@ public class DepartmentController {
 		super();
 		this.service = service;
 	}
+
 	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
-	public List<Department>findAll(){
+	public List<Department> findAll() {
 		List<Department> allDepartments = service.findAll();
-		
+
 		return allDepartments;
 	}
 }
