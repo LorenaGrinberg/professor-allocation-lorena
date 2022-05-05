@@ -19,7 +19,7 @@ import com.project.professorallocation.model.Professor;
 import com.project.professorallocation.service.ProfessorService;
 
 @RestController
-@RequestMapping(path = "/professsors")
+@RequestMapping(path = "/professors")
 public class ProfessorController {
 
 	private final ProfessorService service;
@@ -76,5 +76,5 @@ public class ProfessorController {
 	}
 
 }
-//curl -v --request POST --header "Content-Type: application/json" --header "Accept: application/json" --data-raw "{\"name\": \"Maiara\",\"cpf\": \"25596411285\",\"departmentId\": \"4}" "http://localhost:8080/professors"
-//curl -v --request PUT --header "Content-Type: application/json" --header "Accept: application/json" --data-raw "{\"name\": \"Gleice\"}",\"cpf\": \"00452688945\",\"departmentId\": \"3}" "http://localhost:8080/professors/4"
+//curl -v --request POST --header "Content-Type: application/json" --header "Accept: application/json" --data-raw "{\"name\": \"Maiara\",\"cpf\": \"25596411285\",\"departmentId\": \"4\"}" "http://localhost:8080/professors"
+//curl -v --request PUT --header "Content-Type: application/json" --header "Accept: application/json" --data-raw "{\"name\": \"Gleice\",\"cpf\": \"00452688945\",\"departmentId\": \"3\"}" "http://localhost:8080/professors/4"
