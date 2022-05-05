@@ -74,5 +74,5 @@ public class CourseController {
 		}
 
 }
-//curl -v --request POST --header "Content-Type: application/json" --header "Accept: application/json" --data-raw "{\"name\": \"Física\"}" "http://localhost:8080/courses"
-//curl -v --request PUT --header "Content-Type: application/json" --header "Accept: application/json" --data-raw "{\"name\": \"Farmácia\"}" "http://localhost:8080/courses/5"
+//curl -v --request POST --header "Content-Type: application/json" --header "Accept: application/json" --data-raw "{\"name\": \"Fisica\"}" "http://localhost:8080/courses"
+//curl -v --request PUT --header "Content-Type: application/json" --header "Accept: application/json" --data-raw "{\"name\": \"Farmacia\"}" "http://localhost:8080/courses/5"
