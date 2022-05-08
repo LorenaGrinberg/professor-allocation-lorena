@@ -80,4 +80,4 @@ public class DepartmentController {
 	
 }
 //curl -v --request POST --header "Content-Type: application/json" --header "Accept: application/json" --data-raw "{\"name\": \"Departamento de Pedagogia\"}" "http://localhost:8080/departments"
-//curl -v --request PUT --header "Content-Type: application/json" --header "Accept: application/json" --data-raw "{\"name\": \"Departamento de Matemática\"}" "http://localhost:8080/departments/2"
+//curl -v --request PUT --header "Content-Type: application/json" --header "Accept: application/json" --data-raw "{\"name\": \"Departamento de Matematica\"}" "http://localhost:8080/departments/2"
