@@ -24,6 +24,14 @@ public class AllocationService {
 		return repository.findAll();
 	}
 
+	public List<Allocation> findByProfessor(Long id) {
+		return repository.findByProfessorId(id);
+	}
+
+	public List<Allocation> findByCourse(Long id) {
+		return repository.findByCourseId(id);
+	}
+
 	public void deleteById(Long id) {
 		if (repository.existsById(id)) {
 			repository.deleteById(id);
@@ -53,10 +61,10 @@ public class AllocationService {
 	}
 
 	private boolean hasCollision(Allocation newAllocation) {
-			List<Allocation> currentAllocations = repository.findByProfessorId(newAllocation.getProfessorId());
-			boolean collisionFound = false;
-			
-			for (Allocation item : currentAllocations) {
+		List<Allocation> currentAllocations = repository.findByProfessorId(newAllocation.getProfessorId());
+		boolean collisionFound = false;
+
+		for (Allocation item : currentAllocations) {
 			if (hasCollision(item, newAllocation)) {
 				collisionFound = true;
 				break;
